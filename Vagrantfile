@@ -67,7 +67,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "file", source: "run.sh", destination: "run.sh"
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    sudo apt-get install -y python-matplotlib python-sklearn ipython ipython3 python-pip ipython-notebook
+    sudo apt-get install -y python-matplotlib python-sklearn ipython ipython3 python-pip ipython-notebook python-pandas
     sh run.sh &
   SHELL
 end
